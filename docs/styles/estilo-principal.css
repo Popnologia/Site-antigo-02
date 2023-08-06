@@ -95,7 +95,7 @@ header > p {
 
 /* Área com imagens de fundo */
 .imagem-fundo {
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: cover;
