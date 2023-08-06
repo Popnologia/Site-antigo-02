@@ -70,8 +70,6 @@ header {
   background-color: var(--fundo-solido);
 
   padding: 18px 7px 7px 7px;
-
-  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.5);
 }
 /* Texto no header */
 header > h1,
@@ -84,18 +82,22 @@ header > p {
   -webkit-background-clip: text;
   color: transparent;
 }
-/* Título */
+/* Título no header */
 header > h1 {
   font-size: 3.2em;
   font-weight: 500;
 }
-/* Slogan */
+/* Slogan no header */
 header > p {
   /* color: black; */
   font-size: 0.9em;
   font-weight: 600;
 
   padding: 5px 10px 7px 10px;
+}
+
+main {
+  box-shadow: inset 0 5px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Área com imagens de fundo */
