@@ -6,7 +6,7 @@
 /* Importação Gravidaz (arquivo baixado) */
 @font-face {
   font-family: Gravidaz;
-  src: url(../fontes/Gravidaz.otf) format("opentype");
+  src: url(../assets/fonts/Gravidaz.otf) format("opentype");
   font-weight: normal;
 }
 
@@ -40,7 +40,8 @@
   --gradiente-escuro: var(--cor11), var(--cor12), var(--cor13), var(--cor14), var(--cor15);
 
   /* CORES EM USO */
-  --cor-fundo: var(--cor10);
+  --cor-fundo-solida: var(--cor10);
+  --cor-fundo-transparente: var(--cor07);
   --cor-texto: var(--cor-letra-preta);
 
   --cor-titulo-01: var(--cor01);
@@ -56,4 +57,37 @@
   padding: 0;
 
   font-family: var(--fonte-texto);
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-fundo-solida);
+
+  padding: 18px 7px 7px 7px;
+
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.5);
+}
+/* Texto no header */
+header > h1,
+header > p {
+  font-family: var(--fonte-titulos);
+  text-align: center;
+  /* Gradiente-texto */
+  background-image: linear-gradient(to right, var(--gradiente-colorido));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Título */
+header > h1 {
+  font-size: 3.2em;
+  font-weight: 500;
+}
+/* Slogan */
+header > p {
+  /* color: black; */
+  font-size: 0.9em;
+  font-weight: 600;
+
+  padding: 5px 10px 7px 10px;
 }
