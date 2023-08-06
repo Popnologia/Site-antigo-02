@@ -108,7 +108,9 @@ main {
   background-attachment: cover;
 }
 
-.imagem-atras {
+.imagem-fundo > section,
+.imagem-fundo > aside,
+.imagem-fundo > article {
   background-color: var(--fundo-transparente);
   backdrop-filter: blur(10px);
 
