@@ -60,6 +60,11 @@
   font-family: var(--fonte-texto);
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* Cabeçalho */
 header {
   background-color: var(--fundo-solido);
@@ -117,4 +122,24 @@ header > p {
 p {
   text-align: justify;
   font-size: 1em;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--cor11);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+footer p,
+footer a {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+footer p {
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
 }
