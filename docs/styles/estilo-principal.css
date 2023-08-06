@@ -40,8 +40,9 @@
   --gradiente-escuro: var(--cor11), var(--cor12), var(--cor13), var(--cor14), var(--cor15);
 
   /* CORES EM USO */
-  --cor-fundo-solida: var(--cor10);
-  --cor-fundo-transparente: var(--cor07);
+  --fundo-solido: var(--cor10);
+  --fundo-transparente: rgba(237, 237, 237, 0.5);
+
   --cor-texto: var(--cor-letra-preta);
 
   --cor-titulo-01: var(--cor01);
@@ -61,7 +62,7 @@
 
 /* Cabeçalho */
 header {
-  background-color: var(--cor-fundo-solida);
+  background-color: var(--fundo-solido);
 
   padding: 18px 7px 7px 7px;
 
@@ -90,4 +91,30 @@ header > p {
   font-weight: 600;
 
   padding: 5px 10px 7px 10px;
+}
+
+/* Área com imagens de fundo */
+.imagem-fundo {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: cover;
+}
+
+.imagem-atras {
+  background-color: var(--fundo-transparente);
+  backdrop-filter: blur(10px);
+
+  padding: 12px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.imagem-atras p {
+  color: var(--cor-letra-preta);
+}
+
+/* Todo paragrafo no texto */
+p {
+  text-align: justify;
+  font-size: 1em;
 }

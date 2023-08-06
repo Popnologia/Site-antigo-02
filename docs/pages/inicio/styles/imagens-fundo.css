@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Imagens celular */
+@media screen and (max-width: 768px) {
+  main {
+    background-image: url(../assets/images/capa-celular.jpg);
+  }
+}
