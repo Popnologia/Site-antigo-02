@@ -109,8 +109,19 @@ div.nav-buttons > button {
   background-color: transparent;
 }
 div.nav-buttons > button > i {
+  /* Ícones dos botões do nav */
   font-size: 2.5em;
-  color: var(--cor03);
+}
+i#botao-nav-abrir,
+i#botao-nav-fechar {
+  /* Botões de abrir/fechar nav */
+  padding: 2px;
+
+  /* Gradiente */
+  background-image: linear-gradient(to right, var(--gradiente-colorido));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* CONTEÚDO PRINCIPAL */
