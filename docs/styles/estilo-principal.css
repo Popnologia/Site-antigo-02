@@ -141,6 +141,9 @@ div#nav-list > ul > li {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   list-style-type: none; /*Tirar polinha de marcação*/
 
+  font-size: 0.9em;
+  text-transform: uppercase;
+
   /* Centralizar texto verticalmente */
   display: flex;
   justify-content: center;
