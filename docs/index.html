@@ -22,34 +22,33 @@
     <header>
       <h1>Popnologia</h1>
       <p id="slogan">A Conexão entre Tecnologia e Cultura Pop</p>
-
-      <nav>
-        <div class="nav-buttons">
-          <button onclick="navMobile()">
-            <i class="fi fi-rr-apps" id="botao-nav-abrir"></i>
-          </button>
-          <button onclick="navMobile()">
-            <i class="fi fi-rr-cross" id="botao-nav-fechar"></i>
-          </button>
-        </div>
-        <div id="nav-list">
-          <ul>
-            <li><i class="fi fi-rr-home"></i><a href="#">Início</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/definicao/definicao.html">O que é cultura pop?</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/relacao/relacao.html">Relação entre tecnologia e cultura pop</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/documentario/documentario.html">Documentário</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/jogo/jogo.html">Nosso jogo</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/sobre/sobre.html">Sobre nós</a></li>
-            <li><i class="fi fi-rr-home"></i><a href="pages/contato/contato.html">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
+    <aside id="painel">
+      <!-- Mostrar/ocultar nav -->
+      <button onclick="navMobile()">
+        <i class="fi fi-rr-apps" id="botao-nav-abrir"></i>
+      </button>
+      <button onclick="navMobile()">
+        <i class="fi fi-rr-cross" id="botao-nav-fechar"></i>
+      </button>
+      <!-- Tema claro/escuro -->
+      <button onclick="tema()">
+        <i class="fi fi-rr-sun" id="botao-tema-claro"></i>
+      </button>
+    </aside>
+    <nav>
+      <ul>
+        <li><i class="fi fi-rr-home"></i><a href="#">Início</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/definicao/definicao.html">O que é cultura pop?</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/relacao/relacao.html">Relação entre tecnologia e cultura pop</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/documentario/documentario.html">Documentário</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/jogo/jogo.html">Nosso jogo</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/sobre/sobre.html">Sobre nós</a></li>
+        <li><i class="fi fi-rr-home"></i><a href="pages/contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
     <main class="imagem-fundo">
-      <aside id="botao-tema">
-        <!-- botão de alterar tema claro/escuro -->
-      </aside>
       <section id="introducao">
         <p>Bem-vindo ao Popnologia!</p>
         <p>Nosso objetivo é fornecer informações e insights que ajudem você a entender o impacto da tecnologia na cultura pop e vice-versa.</p>

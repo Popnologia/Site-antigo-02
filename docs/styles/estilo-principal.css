@@ -39,12 +39,14 @@
   --gradiente-claro: var(--cor06), var(--cor07), var(--cor08), var(--cor09), var(--cor10);
   --gradiente-escuro: var(--cor11), var(--cor12), var(--cor13), var(--cor14), var(--cor15);
 
-  /* CORES EM USO */
+  /* CORES TRANSPARENTES */
   --fundo-solido: var(--cor10);
-  --fundo-transparente: rgba(237, 237, 237, 0.5);
+  --fundo-transparente-branco: #ededed80;
+  --fundo-transparente-preto: #1c1c1c;
+  --fundo-transparente: var(--fundo-transparente-branco);
 
+  /* CORES EM USO */
   --cor-texto: var(--cor-letra-preta);
-
   --cor-titulo-01: var(--cor01);
   --cor-titulo-02: var(--cor05);
 
@@ -60,6 +62,7 @@
 }
 
 body {
+  background-color: var(--cor11);
   /* height: 100vh; */
   /* width: 100vw; */
 }
@@ -94,26 +97,33 @@ header > p {
 
   padding: 5px 10px 7px 10px;
 }
+/* PAINEL LATERAL (no mobile) ou embaixo do header */
+aside#painel {
+  display: flex;
+  flex-direction: column; /*Empinhar em coluna*/
+  position: fixed;
+  align-items: center;
+  top: 160px;
+  right: 0;
+  width: 50px;
+  padding: 4px 0;
 
-/* NAV BAR */
-nav {
-  margin-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
+  border-radius: 10px 0 0 10px;
+
+  background-color: var(--fundo-transparente-branco);
+  backdrop-filter: blur(10px);
+
+  box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.5);
 }
-div.nav-buttons > button {
-  /* Botões dentro do nav  */
+aside#painel > button {
+  display: inline-flexbox;
+  margin: auto;
   border: none;
   background-color: transparent;
 }
-div.nav-buttons > button > i {
-  /* Ícones dos botões do nav */
-  font-size: 2.5em;
-}
-i#botao-nav-abrir,
-i#botao-nav-fechar {
-  /* Botões de abrir/fechar nav */
+aside#painel > button > i {
+  /* Ícones dos botões do painel */
+  font-size: 3em;
   padding: 2px;
 
   /* Gradiente */
@@ -122,21 +132,26 @@ i#botao-nav-fechar {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* Ocultar nav e botão de fechar */
 i#botao-nav-fechar,
-div#nav-list {
+nav {
   display: none;
 }
-div#nav-list {
+
+/* NAV BAR */
+nav {
   /* Bloco dos links */
   width: 85vw;
-  margin: 10px auto;
+  margin: auto;
   padding: 5px;
+  position: fixed;
 
   background-color: var(--cor11);
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
-div#nav-list > ul > li {
+nav > ul > li {
   /* Mini-blocos de links */
   height: 2em;
   margin: 10px;
@@ -153,12 +168,12 @@ div#nav-list > ul > li {
   justify-content: center;
   align-items: center;
 }
-div#nav-list > ul > li > a {
+nav > ul > li > a {
   /* Texto dos links */
   text-decoration: none;
   color: var(--cor10);
 }
-div#nav-list > ul > li:hover {
+nav > ul > li:hover {
   /* Ao passar mouse em cima do li do nav */
   background-image: linear-gradient(to right, var(--gradiente-colorido));
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
