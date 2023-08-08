@@ -145,6 +145,8 @@ div#nav-list > ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: 2s;
 }
 div#nav-list > ul > li > a {
   /* Texto dos links */
@@ -154,6 +156,7 @@ div#nav-list > ul > li > a {
 div#nav-list > ul > li:hover {
   /* Ao passar mouse em cima do li do nav */
   background-image: linear-gradient(to right, var(--gradiente-colorido));
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* CONTEÚDO PRINCIPAL */
