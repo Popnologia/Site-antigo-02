@@ -122,6 +122,10 @@ i#botao-nav-fechar {
   -webkit-background-clip: text;
   color: transparent;
 }
+i#botao-nav-fechar,
+div#nav-list {
+  display: none;
+}
 div#nav-list {
   /* Bloco dos links */
   width: 85vw;
@@ -148,8 +152,6 @@ div#nav-list > ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: 2s;
 }
 div#nav-list > ul > li > a {
   /* Texto dos links */
