@@ -151,6 +151,10 @@ div#nav-list > ul > li > a {
   text-decoration: none;
   color: var(--cor10);
 }
+div#nav-list > ul > li:hover {
+  /* Ao passar mouse em cima do li do nav */
+  background-image: linear-gradient(to right, var(--gradiente-colorido));
+}
 
 /* CONTEÚDO PRINCIPAL */
 main {
