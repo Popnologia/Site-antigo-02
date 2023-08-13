@@ -112,8 +112,6 @@ aside#painel {
 
   background-color: var(--fundo-transparente-branco);
   backdrop-filter: blur(10px);
-
-  box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 aside#painel > button {
   display: inline-flexbox;
