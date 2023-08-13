@@ -37,6 +37,8 @@ function tema() {
     root.setProperty("--fundo-transparente", "var(--fundo-transparente-branco")
     //Texto
     root.setProperty("--cor-texto", "var(--cor-letra-preta")
+    //Icone (colorido/branco)
+    root.setProperty("--icone-colorido", "var(--gradiente-colorido)")
   } else if (temaAtual == "dark") {
     botaoEscuro.style.display = "block" //Mostrar botão escuro
     botaoClaro.style.display = "none" //Esconder botão claro
@@ -50,5 +52,7 @@ function tema() {
     root.setProperty("--fundo-transparente", "var(--fundo-transparente-preto")
     //Texto
     root.setProperty("--cor-texto", "var(--cor-letra-branca")
+    //Icone (colorido/branco)
+    root.setProperty("--icone-colorido", "var(--gradiente-claro)")
   }
 }

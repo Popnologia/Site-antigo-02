@@ -55,6 +55,10 @@
   /* FONTES */
   --fonte-titulos: "Gravidaz", "Lato", sans-serif;
   --fonte-texto: "Lato", Arial, Helvetica, sans-serif;
+
+  /* ÍCONES */
+  --icone-colorido: var(--gradiente-colorido);
+  --icone-solido: var(--cor10);
 }
 
 * {
@@ -127,7 +131,7 @@ aside#painel > button > i {
   padding: 2px;
 
   /* Gradiente */
-  background-image: linear-gradient(to right, var(--gradiente-colorido));
+  background-image: linear-gradient(to right, var(--icone-colorido));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
