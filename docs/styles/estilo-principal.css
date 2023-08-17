@@ -145,7 +145,6 @@ nav {
 
 /* NAV BAR */
 nav {
-  display: none;
   position: fixed;
   z-index: 100; /*Não ser sobreposto por outros elementos*/
   left: 3.5vw;
@@ -157,6 +156,8 @@ nav {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  transform: 2s;
 }
 nav > ul > li {
   min-height: 2em;
